@@ -1,0 +1,36 @@
+URL dataset yang dijadikan acuan.
+https://www.kaggle.com/datasets/pratyushpuri/ev-electrical-vehicles-dataset-3k-records-2025
+
+Syntax DDL untuk pembuatan table.
+CREATE TABLE IF NOT EXISTS table_m3(
+    id SERIAL PRIMARY KEY,
+    Manufacturer VARCHAR(50),
+    Model VARCHAR(100),
+    Year INTEGER,
+    Battery_Type VARCHAR(30),
+    Battery_Capacity_kWh FLOAT,
+    Range_km INTEGER,
+    Charging_Type VARCHAR(30),
+    Charge_Time_hr FLOAT,
+    Price_USD FLOAT,
+    Color VARCHAR(30),
+    Country_of_Manufacture VARCHAR(50),
+    Autonomous_Level FLOAT,
+    CO2_Emissions_g_per_km FLOAT,
+    Safety_Rating FLOAT,
+    Units_Sold_2024 INTEGER,
+    Warranty_Years INTEGER
+)
+
+Syntax DML untuk melakukan insert data ke database. 
+Anda bisa menggunakan perintah COPY untuk melakukan insert data.
+
+COPY table_m3 (
+    Manufacturer, Model, Year, Battery_Type, Battery_Capacity_kWh,
+    Range_km, Charging_Type, Charge_Time_hr, Price_USD, Color,
+    Country_of_Manufacture, Autonomous_Level, CO2_Emissions_g_per_km,
+    Safety_Rating, Units_Sold_2024, Warranty_Years
+)
+FROM '/opt/airflow/dags/P2M3_yudhistira_data_raw.csv'
+DELIMITER ','
+CSV HEADER;

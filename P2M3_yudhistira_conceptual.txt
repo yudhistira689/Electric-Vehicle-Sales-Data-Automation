@@ -1,0 +1,34 @@
+Conceptual Problems
+
+Jawab pertanyaan berikut dengan menggunakan kalimat Anda sendiri:
+
+1. Jelaskan apa yang dimaksud dengan NoSQL menggunakan pemahaman yang kalian ketahui !
+
+NoSQL adalah sistem database non-relasional yang menyimpan data dalam format fleksibel seperti 
+dokumen, key-value, kolom, atau graph. Cocok untuk data besar dan tidak terstruktur.
+
+2. Jelaskan kapan harus menggunakan NoSQL dan Relational Database Management System !
+
+NoSQL adalah data yang tidak terstruktur, skala besar, dan kebutuhan fleksibel (misalkan seperti media sosial, IoT).
+RDBMS adalah data yang terstruktur dan butuh relasi kuat (misalkan keuangan, HR, inventory).
+
+3. Sebutkan contoh 2 tools/platform NoSQL selain ElasticSearch beserta keunggulan tools/platform tersebut !
+
+- MongoDB: skema fleksibel, cocok untuk aplikasi modern.
+- Cassandra: cepat, tahan gagal, cocok untuk big data terdistribusi.
+
+4. Jelaskan apa yang Anda ketahui dari Airflow menggunakan pemahaman dan bahasa Anda sendiri !
+
+Airflow adalah platform untuk menjadwalkan dan mengatur alur kerja data (workflow) 
+secara otomatis menggunakan konsep DAG (Directed Acyclic Graph).
+
+5. Jelaskan apa yang Anda ketahui dari Great Expectations menggunakan pemahaman dan bahasa Anda sendiri !
+
+Great Expectations adalah framework untuk memvalidasi kualitas data agar sesuai aturan 
+(misalkan nilai dalam rentang tertentu, kolom unik, tidak ada null).
+
+6. Jelaskan apa yang Anda ketahui dari Batch Processing menggunakan pemahaman dan bahasa Anda sendiri (Definisi, Contoh Kasus Penggunaan, Tools, dll) !
+
+Batch Processing adalah pemrosesan data dalam kelompok besar pada waktu tertentu, bukan real-time.
+Contoh: menghitung penjualan harian.
+Tools: Spark, Hadoop, Airflow.
